@@ -1,13 +1,15 @@
-/bin
-/lib
-/src/version.ml
-/tests.org
+
+## Morbig specific files
 *.json
 *.sjson
 
 ## Emacs files
 *~
 *#
+
+## Dune files
+.merlin
+/_build
 
 ## OPAM package
 /morbig.*

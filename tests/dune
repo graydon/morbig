@@ -1,0 +1,8 @@
+(alias
+ (name runtest)
+ (action (run ./run))
+ (deps
+  (source_tree bad)
+  (source_tree good)
+  (source_tree unknown)
+  (source_tree unspecified)))

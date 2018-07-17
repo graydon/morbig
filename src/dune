@@ -1,0 +1,12 @@
+(library
+ (name libmorbig)
+ (public_name morbig)
+ (flags :standard -w -27-32-33-34-39-43-50)
+ (libraries menhirLib yojson ppx_deriving_yojson.runtime visitors.runtime)
+ (preprocess (pps ppx_deriving_yojson visitors.ppx)))
+
+(ocamllex prelexer)
+
+(menhir
+ (modules parser)
+ (flags --inspection --table --infer --external-tokens CST))

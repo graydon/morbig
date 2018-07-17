@@ -416,11 +416,25 @@ and complete_command_list' = complete_command_list located
 
 [@@deriving
    yojson,
-   visitors { variety = "iter";       ancestors=["located_iter"] },
-   visitors { variety = "map";        ancestors=["located_map"]  },
-   visitors { variety = "reduce";     ancestors=["located_reduce"]  },
-   visitors { variety = "mapreduce";  ancestors=["located_mapreduce"]  },
-   visitors { variety = "iter2";      ancestors=["located_iter2"]  },
-   visitors { variety = "map2";       ancestors=["located_map2"]  },
-   visitors { variety = "reduce2";    ancestors=["located_reduce2"]  }
+   visitors { variety = "iter";
+              nude = true ;
+              ancestors = [ "located_iter" ] },
+   visitors { variety = "map";
+              nude = true ;
+              ancestors = [ "located_map" ] },
+   visitors { variety = "reduce";
+              nude = true ;
+              ancestors = [ "located_reduce" ] },
+   visitors { variety = "mapreduce";
+              nude = true ;
+              ancestors = [ "located_mapreduce" ] },
+   visitors { variety = "iter2";
+              nude = true ;
+              ancestors = [ "located_iter2" ] },
+   visitors { variety = "map2";
+              nude = true ;
+              ancestors= [ "located_map2" ] },
+   visitors { variety = "reduce2";
+              nude = true ;
+              ancestors= [ "located_reduce2" ] }
 ]
